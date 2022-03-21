@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        img {
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+<img src="https://thuthuat.hourofcode.vn/wp-content/uploads/2020/05/T%E1%BA%A1o-%E1%BA%A3nh-%C4%91%E1%BB%99ng-trong-powerpoint-1.gif"
+     alt="">
+<script>
+    class myDate {
+        day
+        month
+        year
+
+        constructor(day, month, year) {
+            this.day = day;
+            this.month = month;
+            this.year = year;
+        }
+
+        getDay() {
+            return this.day
+        }
+
+        setDay(day) {
+            this.day = day
+        }
+
+        getMonth() {
+            return this.month
+        }
+
+        setMonth(month) {
+            this.month = month
+        }
+
+        getYear() {
+            return this.year
+        }
+
+        setYear(year) {
+            this.year = year
+        }
+
+        setDate(day, month, year) {
+            this.day = day
+            this.month = month
+            this.year = year
+        }
+
+        toString() {
+            console.log((this.getDay() + "/" + this.getMonth() + "/" + this.getYear()))
+        }
+    }
+
+    let date = new myDate(2, 2, 2007)
+    console.log(date.getDay() + "/" + date.getMonth() + "/" + date.getYear())
+    date.setDay(10)
+    date.setMonth(10)
+    date.setYear(2019)
+    console.log(date.getDay() + "/" + date.getMonth() + "/" + date.getYear())
+    date.setDate(22, 11, 2021)
+    date.toString()
+
+</script>
+</body>
+</html>
