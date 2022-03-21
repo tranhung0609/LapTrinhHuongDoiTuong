@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Xây dựng lớp Date</title>
     <style>
         img {
             width: 300px;
@@ -55,16 +55,16 @@
         }
 
         toString() {
-            console.log((this.getDay() + "/" + this.getMonth() + "/" + this.getYear()))
+            document.write("<br>"+this.getDay() + "/" + this.getMonth() + "/" + this.getYear())
         }
     }
 
     let date = new myDate(2, 2, 2007)
-    console.log(date.getDay() + "/" + date.getMonth() + "/" + date.getYear())
+    document.write("<br>"+date.getDay() + "/" + date.getMonth() + "/" + date.getYear())
     date.setDay(10)
     date.setMonth(10)
     date.setYear(2019)
-    console.log(date.getDay() + "/" + date.getMonth() + "/" + date.getYear())
+    document.write("<br>"+date.getDay() + "/" + date.getMonth() + "/" + date.getYear())
     date.setDate(22, 11, 2021)
     date.toString()
 
