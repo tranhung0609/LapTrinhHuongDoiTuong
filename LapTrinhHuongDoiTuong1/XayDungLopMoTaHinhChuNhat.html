@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<canvas id="canvas" width="1300" height="600" style="border: 1px solid #d3d3d3;"></canvas>
+<script>
+  class Hcn {
+    width
+    height
+    color
+
+    constructor(width, height, color) {
+      this.width = width
+      this.height = height
+      this.color = color
+    }
+
+    getDientich() {
+      return this.height * this.width
+    }
+
+    getChuvi() {
+      return 2 * (this.width + this.height)
+    }
+
+    draw(ctx) {
+      ctx.fillStyle = this.color
+      ctx.fillRect(300, 300, this.width, this.height)
+    }
+  }
+
+  let rectangle = new Hcn(700, 300, "red")
+  let ctx = document.getElementById("canvas").getContext("2d")
+  rectangle.draw(ctx)
+  document.write(rectangle.getDientich() + "<br>")
+  document.write(rectangle.getChuvi())
+</script>
+</body>
+</html>
